@@ -68,7 +68,7 @@ def main():
     st.sidebar.markdown("## Input Company Information")
     Size = st.sidebar.selectbox("Company Size", list(size_map.values()))
     Revenue = st.sidebar.selectbox("Company Revenue", list(revenue_map.values()))
-    age = st.sidebar.slider("Company Age", min_value=5, max_value=500, value=30)
+    age = st.sidebar.slider("Company Age", min_value=5, max_value=300, value=30)
 
     st.sidebar.markdown("## Input additional Job information")
     hourly = st.sidebar.selectbox("Hourly Rate",[0,1], format_func=lambda x: "Yes" if x==1 else "No")
